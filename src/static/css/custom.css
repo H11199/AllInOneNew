@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap");
+
+.container-fluid {
+  padding: 0;
+}
+.main {
+  width: 100%;
+}
+.pack {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/Homepage2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 640px;
+}
+
+.navbar {
+  background-color: transparent;
+  position: relative;
+  padding-left: 90px;
+}
+.navbar-brand {
+  font-family: "Pacifico", cursive;
+  color: #fff !important;
+  font-size: 40px !important;
+}
+i {
+  height: 20px;
+}
+a {
+  text-decoration: none;
+}
+
+.container-top-main {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-top-heading {
+  color: #fff;
+  font-size: 66px;
+}
+.container-top-para {
+  color: #fff;
+  font-size: 20px;
+}
+.arrow-font {
+  font-size: 45px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button {
+  position: relative;
+  min-width: 80px;
+  text-align: center;
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 14px;
+  font-weight: 700;
+  z-index: 10;
+  transition: all 500ms;
+  border: 2px solid transparent;
+  margin: 10px 15px;
+  border-radius: 5px;
+}
+.button::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 500ms;
+  border-radius: 5px;
+}
+.button:hover {
+  box-shadow: none !important;
+}
+.button.button-red {
+  color: #fff;
+  background-color: #ff1744;
+  box-shadow: 0 5px 20px rgba(255, 23, 68, 0.3);
+}
+.button.button-red::after {
+  background-color: #fff;
+}
+.button.button-red:hover {
+  color: #ff1744;
+  border-color: #ff1744;
+}
+.button.button-right::after {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+}
+.button.button-right:hover::after {
+  width: 100%;
+  right: 0;
+  left: auto;
+}
+
+.login-page-body {
+  background-image: url("../images/moon.jpg");
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+.card-container {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+.login-inp {
+  height: 43px;
+}
+.card-login {
+  height: 300px;
+  background-color: rgb(58, 58, 58);
+  color: #fff;
+}
+.btn-login {
+  width: 99%;
+  height: 43px;
+  background-color: #ff1744;
+}
+.VerticalBar {
+  width: 15%;
+  height: 100vh;
+}
+.VerticalBar h3 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.nav-link {
+  list-style: none;
+  color: #fff;
+}
+.VerticalBar button {
+  position: absolute;
+  bottom: 100px;
+  left: 70px;
+}
+.nav-item:hover {
+  background-color: black;
+  list-style: none;
+  color: #fff;
+}
+.post-row {
+  position: relative;
+  width: 100%;
+}
+.post-form {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  transform: translate(-20%, -20%);
+  padding-top: 40px;
+}
+.container-post {
+  width: 800px;
+}
+.btn-post {
+  margin-top: 20px;
+}
+.postNavbarbg {
+  background-color: rgba(90, 108, 220, 1);
+  opacity: 3;
+}
+.container-postview {
+  padding: 50px;
+  padding-left: 120px;
+}
+.postview-title {
+  font-family: "Merriweather", serif;
+}
+.admin-img {
+  display: inline-block;
+  margin-right: 8px;
+  font-weight: 600;
+}
+.badge {
+  margin-left: 5px;
+  background-color: rgba(90, 108, 220, 1);
+  width: 54px;
+  height: 25px;
+  padding-top: 7px;
+  text-align: center;
+  font-weight: 200;
+}
+.social-media {
+  display: inline-block;
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: black;
+  color: #fff;
+}
+.social {
+  display: inline-block;
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  font-size: 25px;
+  margin-right: 10px;
+}
+.media-links {
+  color: #fff;
+}
+.media-links:visited {
+  color: #fff;
+}
+
+.util-img {
+  height: 400px;
+  mask-image: linear-gradient(
+    rgba(90, 108, 220, 1),
+    rgb(69, 84, 187)
+  ) !important;
+}
+.post-post-container img {
+  width: 100%;
+}
+.post-post-container {
+  position: relative;
+  margin-top: 20px;
+  width: 800px;
+  border: none;
+  font-family: "Merriweather", serif;
+  font-size: 19px;
+}
+.post-card {
+  border: none;
+}
+.cardMainBoard {
+  width: 100%;
+  margin-bottom: 30px;
+  padding-bottom: 40px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+}
+.container-homepage :nth-child(1) {
+  margin-top: 20px;
+}
+.card-img-top {
+  height: 400px;
+}
+@media (min-device-width: 320px) and (max-device-width: 480px) {
+  .pack {
+    height: 400px;
+  }
+  .container-top-heading {
+    font-size: 40px;
+    color: #ff1744;
+  }
+  .col-posts-home {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .card-img-top {
+    height: 200px;
+  }
+  .card-title {
+    font-size: 25px;
+  }
+  .card-text {
+    font-size: 15px;
+  }
+  .post-cover-img {
+    height: 300px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .post-post-container {
+    font-size: 16px;
+    width: 100%;
+  }
+  .postview-title {
+    font-size: 30px;
+  }
+}
+@media (min-device-width: 481px) and (max-device-width: 767px) {
+  .pack {
+    height: 400px;
+  }
+  .container-top-heading {
+    font-size: 40px;
+  }
+  .col-posts-home {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .card-img-top {
+    height: 400px;
+  }
+  .card-title {
+    font-size: 28px;
+  }
+  .card-text {
+    font-size: 18px;
+  }
+  .post-post-container {
+    width: 100%;
+  }
+}
+.footer {
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+}
+.container-scroll {
+  height: 100vh;
+  overflow: scroll;
+  padding: 40px;
+}
